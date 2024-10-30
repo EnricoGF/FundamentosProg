@@ -1,33 +1,22 @@
-a = [[1,2,3],
-     [4,5,6],
-     [7,8,9]]
+string = "oi, arroz, cachorro, gato"
+palavra = "oi"
 
-linhas = len(a)
-colunas = len(a[0])
-print(f"matriz a[{linhas}][{colunas}]")
+if palavra in string:
+    print("sim")
+else:
+    print("nao")
 
-elemento4 = a[1][0]
+###################
 
-def matrizVazia():
-    linhas = 2
-    colunas = 4
-    matriz= []
-
-    for i in range(linhas):
-        matriz.append([0] * colunas)
-
-    for linha in matriz:
-        print(linha)
-
-def varreduraIndex():
-    linhas = 5
-    colunas = 5
-    matriz2 = []
-
-    for i in range(linhas):
-        matriz2.append(list(range(colunas)))
-
-    for linha in range(linhas):
-        for coluna in range(colunas):
-            print(matriz2[linha][coluna], end = " ")
-        print()
+a= ""
+a.capitalize() # Maiusculo na primeira letra da linha
+a.upper()
+a.lower()
+a.tittle() # Maiusculo A Cada Espaço
+a.swapcase() #Se é lower vira upper se é upper vira lower
+a.strip() #Remove espaços no inicio e no final
+a.replace("cachorro", "rato") # Troca "cachorro" por "rato"
+a.split()
+a.count("x") # Conta quantos "x" tem na string
+a.rfind("rato") # Retorna o indice do primeiro "rato" encontrado na string
+a.endswith(".py") # Retorna bool se termina com ".py"
